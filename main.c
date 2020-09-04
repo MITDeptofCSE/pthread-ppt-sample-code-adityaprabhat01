@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
   pthread_attr_t attr;
   
   if(argc != 2){
-    fprintf(stderr, "usage: a.out <integer value>\n");
+    fprintf(stderr, "usage: a.out 10\n");
     return -1;
   }
   
