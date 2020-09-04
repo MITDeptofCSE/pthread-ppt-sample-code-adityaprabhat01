@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<pthread.h>
 
 int sum;
@@ -7,7 +8,7 @@ int main(int argc, char *argv[])
 {
   printf("Hello");
   //Add your code below
-  pthread_T tid;
+  pthread_t tid;
   pthread_attr_t attr;
   
   if(argc != 2){
@@ -31,5 +32,5 @@ void *runner(void *param){
   sum = 0;
   for(i=1;i<=upper;i++)
       sum+=i;
-  pthread.exit(0);
+  pthread_exit(0);
 }
